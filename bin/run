@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# run
+#
+# Start server
+#
+# Ryan Quinlan <quinscoins@gmail.com>
+
+# Serve
+cd html
+python3 -m http.server 8000
