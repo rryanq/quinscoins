@@ -2,6 +2,11 @@
 	max-width: 500px;
 	margin: auto;
 }
+.box {
+	max-width: 450px;
+	margin: auto;
+  border: 5px solid grey ;
+}
 .boxed {
   border: 5px solid green ;
 }
