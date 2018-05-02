@@ -1,0 +1,28 @@
+#!/bin/bash
+
+case $1 in
+  "create")
+    if [ -f quinscoins/var/terms.sqlite3 ]; then
+        echo "Error: database already exists"
+    else
+        echo "+ sqlite3 quinscoins/var/terms.sqlite3 < quinscoins/sql/terms.sql"
+        sqlite3 quinscoins/var/terms.sqlite3 < quinscoins/sql/terms.sql
+    fi
+    ;;
+
+  "destroy")
+    echo "+ rm -rf quinscoins/var/terms.sqlite3"
+    rm -rf quinscoins/var/terms.sqlite3
+    ;;
+
+  "reset")
+    echo "+ rm -rf quinscoins/var/terms.sqlite3"
+    echo "+ sqlite3 quinscoins/var/terms.sqlite3 < quinscoins/sql/terms.sql"
+    rm -rf quinscoins/var/terms.sqlite3
+    sqlite3 quinscoins/var/terms.sqlite3 < quinscoins/sql/terms.sql
+    ;;
+
+  *)
+    exit 1
+    ;;
+esac

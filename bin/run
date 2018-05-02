@@ -7,5 +7,5 @@
 # Ryan Quinlan <quinscoins@gmail.com>
 
 # Serve
-cd html
+cd quinscoins/html
 python3 -m http.server 8000

@@ -2,17 +2,19 @@
 <html lang="en">
 
 	<head>
-		<title>Title</title>
+		<title>Coin Roll Hunting Terminology</title>
 		<link rel="icon"
       type="image/png"
       href="http://www.quinscoins.com/favicon.ico">
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="/static/css/styles.css">
 	</head>
   <body>
     <div class="wrap">
-      <h1>Heading</h1>
+      <h1>Coin Roll Hunting Terminology</h1>
 			<div class="boxed">
-				<p>Boxed Stuff</p>
+        {% for term in terms %}
+          <p><b>{{term['term']}}:</b> {{term['definition']}}</p>
+        {% endfor %}
 			</div>
 			<p><a href="/", alt="Back to Home">Back to Home</a></p>
       <br><br><p>&copy;2018 Quinlan Productions LLC All Rights Reserved</p>
