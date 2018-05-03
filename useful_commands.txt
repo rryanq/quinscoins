@@ -1,0 +1,5 @@
+# Run Program
+python3 -m http.server 8000
+
+# SSH into EC2 instance
+ssh -i quinscoins_key.pem ubuntu@ec2-18-188-44-183.us-east-2.compute.amazonaws.com

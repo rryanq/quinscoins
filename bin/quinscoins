@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd quinscoins/quiunscoins
+cd quinscoins/quinscoins
 echo "starting quinscoins server ..."
 echo "+ export FLASK_APP=quinscoins"
 echo "+ export SEARCH_SETTINGS=config.py"
