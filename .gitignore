@@ -101,4 +101,6 @@ ENV/
 .mypy_cache/
 
 # Added by me
-*quins_coins_key.pem
+quinscoins_key.pem
+quinscoins/node_modules
+quinscoins/quinscoins/static/js/bundle.js
