@@ -6,3 +6,12 @@ ssh -i quinscoins_key.pem ubuntu@ec2-18-188-44-183.us-east-2.compute.amazonaws.c
 
 # Build javascript (from quinscoins-web-app/quinscoins)
 node_modules/.bin/webpack
+
+# Obfuscate javascript files
+node_modules/.bin/javascript-obfuscator quinscoins/static/js/bundle.js  # obfuscate
+$ mv quinscoins/static/js/bundle-obfuscated.js quinscoins/static/js/bundle.js # replace with the obfuscated version
+
+# Deploy to aws (after ssh)
+pgrep -af gunicorn # checks if there are any gunicorn processes running
+pkill -f gunicorn # kills any gunicorn processes
+gunicorn -b localhost:8000 -w 2 -D quinscoins:app # deploys app
