@@ -9,7 +9,7 @@ node_modules/.bin/webpack
 
 # Obfuscate javascript files
 node_modules/.bin/javascript-obfuscator quinscoins/static/js/bundle.js  # obfuscate
-$ mv quinscoins/static/js/bundle-obfuscated.js quinscoins/static/js/bundle.js # replace with the obfuscated version
+mv quinscoins/static/js/bundle-obfuscated.js quinscoins/static/js/bundle.js # replace with the obfuscated version
 
 # Deploy to aws (after ssh)
 pgrep -af gunicorn # checks if there are any gunicorn processes running
