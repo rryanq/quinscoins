@@ -40,43 +40,73 @@
 			<a name="cents">
 			<div class="boxed">
 				<b><p>Cents</p></b>
-				{% for term in cent_terms %}
-          <p><b>{{term['term']|title}}:</b> {{term['definition']}}</p>
+        {% for term in cent_terms %}
+          <p><b>
+						{{term['term']|title}}
+						{% if term['acronym'] != '' %}
+						  ({{term['acronym']|upper}})
+						{% endif %}
+					-</b> {{term['definition']}}</p>
         {% endfor %}
 			</div><br>
 			<a name="nickels">
 			<div class="boxed">
 				<b><p>Nickels</p></b>
-				{% for term in nickel_terms %}
-          <p><b>{{term['term']|title}}:</b> {{term['definition']}}</p>
+        {% for term in nickel_terms %}
+          <p><b>
+						{{term['term']|title}}
+						{% if term['acronym'] != '' %}
+						  ({{term['acronym']|upper}})
+						{% endif %}
+					-</b> {{term['definition']}}</p>
         {% endfor %}
 			</div><br>
 			<a name="dimes">
 			<div class="boxed">
 				<b><p>Dimes</p></b>
 				{% for term in dime_terms %}
-          <p><b>{{term['term']|title}}:</b> {{term['definition']}}</p>
+          <p><b>
+						{{term['term']|title}}
+						{% if term['acronym'] != '' %}
+						  ({{term['acronym']|upper}})
+						{% endif %}
+					-</b> {{term['definition']}}</p>
         {% endfor %}
 			</div><br>
 			<a name="quarters">
 			<div class="boxed">
 				<b><p>Quarters</p></b>
 				{% for term in quarter_terms %}
-          <p><b>{{term['term']|title}}:</b> {{term['definition']}}</p>
+          <p><b>
+						{{term['term']|title}}
+						{% if term['acronym'] != '' %}
+						  ({{term['acronym']|upper}})
+						{% endif %}
+					-</b> {{term['definition']}}</p>
         {% endfor %}
 			</div><br>
 			<a name="halves">
 			<div class="boxed">
 				<b><p>Halves</p></b>
 				{% for term in half_terms %}
-          <p><b>{{term['term']|title}}:</b> {{term['definition']}}</p>
+          <p><b>
+						{{term['term']|title}}
+						{% if term['acronym'] != '' %}
+						  ({{term['acronym']|upper}})
+						{% endif %}
+					-</b> {{term['definition']}}</p>
         {% endfor %}
 			</div><br>
 			<a name="dollars">
 			<div class="boxed">
 				<b><p>Dollars</p></b>
 				{% for term in dollar_terms %}
-          <p><b>{{term['term']|title}}:</b> {{term['definition']}}</p>
+          <p><b>
+						{{term['term']|title}}
+						{% if term['acronym'] != '' %}
+						  ({{term['acronym']|upper}})
+						{% endif %}
+					-</b> {{term['definition']}}</p>
         {% endfor %}
 			</div><br>
 			<p><a href="/", alt="Back to Home">Back to Home</a></p>
