@@ -15,17 +15,22 @@ def term_result(term):
     data_b = quinscoins.model.get_db()
     value = data_b.execute("SELECT * FROM Terms WHERE term = ?", [term])
     value = value.fetchone()
+    # if searching database by exact term didn't return anything, try searching by nickname
     if not value:
         data_b = quinscoins.model.get_db()
         value = data_b.execute("SELECT * FROM Terms WHERE nickname = ?", [term])
         value = value.fetchone()
-        if not value:
-            data_b = quinscoins.model.get_db()
-            value = data_b.execute("SELECT * FROM Terms WHERE acronym = ?", [term])
-            value = value.fetchone()
-            #FIXME: do one more query if we still don't have a value at this point
-            # look through all definitions and split into words, try to find a matching word
-            # return either one result using fetchone or return the whole list of results
+    # if searching by nickname doesn't return anything, try searching by acronym
+    if not value:
+        data_b = quinscoins.model.get_db()
+        value = data_b.execute("SELECT * FROM Terms WHERE acronym = ?", [term])
+        value = value.fetchone()
+    # if we still don't have anything, conduct a more complicated search
+    #FIXME: do one more query if we still don't have a value at this point
+    # look through all definitions and split into words, try to find a matching word
+    # return either one result using fetchone or return the whole list of results
+
+    # even at this point, we might not have any matches for the search
     if value:
         word = value["term"]
         word = word.title()

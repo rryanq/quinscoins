@@ -86,101 +86,111 @@ INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('white edge', 'describes the edge of a silver coin that is of high grade and, thus, appears as a much lighter shade of grey', 'CRH', 'whiteedge', '');
 
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
+('cent', 'coin in US and Canada worth one one-hundredth of a dollar', 'cents', '', '');
+INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('penny', 'term commonly used to refer to a US cent', 'cents', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('indian', 'an Indian head small cent', 'cents', '', '');
+('indian head cent', 'an Indian head small cent, minted from 1859-1909', 'cents', 'indian head penny', 'ihc');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('ihp', 'acronym for “Indian Head Penny”', 'cents', '', '');
+('flying eagle cent', 'a flying eagle small cent, minted from 1856-1858', 'cents', 'flying eagle', 'fe');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('flying eagle', 'a flying eagle small cent', 'cents', '', '');
+('white cent', 'any US small cent minted from 1856-1864 (excludes large cents made in 1856 and 1857). The term "white" is in reference to the color of these cents in contrast to cents made after 1864 (see also: fatty)', 'cents', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('white cent', 'any US small cent minted from 1856-1864 (excludes large cents made in 1856 and 1857)', 'cents', '', '');
+('fatty', 'any US small cent minted from 1856-1864 (excludes large cents made in 1856 and 1857). In contrast to cents made after 1864, these cents are much thicker (fatter)', 'cents', 'fathead', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('wheat', 'a wheat cent', 'cents', '', '');
+('wheat cent', 'a wheat cent, named after the image of wheat stalks on the reverse of the coin. Minted 1909-1958', 'cents', 'wheatie', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('lincoln', 'any cent minted from 1909 to the present day', 'cents', '', '');
+('lincoln cent', 'a cent with president Abraham Lincoln''s depiction on the obverse of the coin, minted from 1909 to the present day', 'cents', 'lincoln', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('memorial', 'any cent minted from 1959-2008', 'cents', '', '');
+('memorial cent', 'a cent minted from 1959-2008', 'cents', 'memorial', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('zincoln', 'a cent composed of 95% zinc, minted from 1982 to present day', 'cents', '', '');
+('zincoln', 'a cent composed of 95% zinc, minted from 1982 to present day', 'cents', 'zinc cent', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('shield cent', 'a cent minted after 2009', 'cents', '', '');
+('shield cent', 'a cent minted after 2009', 'cents', 'shield back', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('copper', 'a copper cent, almost always refers to cents minted from 1959-1982', 'cents', '', '');
+('copper', 'a copper cent, almost always refers to cents minted from 1959-1982', 'cents', 'cop', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('steel', 'a 1943 steel cent. Can also used to refer to a steel Canadian cent', 'cents', '', '');
+('steel', 'a 1943 steel cent. Can also used to refer to a steel Canadian cent', 'cents', 'steelie', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('large cent', 'a cent minted primarily before 1856 and dating back to 1793 (not commonly found coin roll hunting due to obsolete dimensions)', 'cents', '', '');
+('large cent', 'a large cent, minted primarily before 1856 and dating back to 1793 (not commonly found coin roll hunting due to obsolete dimensions)', 'cents', 'largie', 'LC');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('bird cent', 'a 1967 Centennial Canadian Cent', 'cents', '', '');
+('bird cent', 'a 1967 Centennial Canadian Cent', 'cents', 'birdent', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('kg', 'acronym for “King George” (Canadian)', 'cents', '', '');
+('king george', 'an older Canadian cent. There are KG V cents minted from 1920-1936 and KG VI cents minted from 1937-1952', 'cents', 'kg cent', 'kg');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('wood grain', 'a coin (normally an older cent) that appears to have streaks making it look like a wood grain. This is caused by an abnormality in the alloy.', 'cents', '', '');
+('woody', 'a coin (normally an older cent) that appears to have streaks on its surface, making it look like a wood grain. This is caused by an abnormality in the alloy that makes up the coin.', 'cents', 'wood grain', '');
 
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('shield nickel', 'a shield nickel, minted from 1866-1883', 'nickels', '', '');
+('nickel', 'a 5 cent coin in the US and Canada', 'nickels', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('v nickel', 'a liberty head, or V nickel, minted from 1883-1913 (there are only 5 known examples of the 1913)', 'nickels', '', '');
+('shield nickel', 'a shield nickel, minted from 1866-1883', 'nickels', 'shield', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('buffalo', 'a buffalo nickel, minted from 1913-1938', 'nickels', '', '');
+('v nickel', 'a liberty head, or V nickel, minted from 1883-1913 (there are only 5 known examples of the 1913)', 'nickels', 'liberty head nickel', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('jefferson', 'a Thomas Jefferson nickel, minted from 1938-2003 with multiple design changes in the following years', 'nickels', '', '');
+('buffalo nickel', 'a buffalo nickel, minted from 1913-1938', 'nickels', 'buffalo', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('war nickel', 'a nickel composed of 35% silver, minted from 1942-1945', 'nickels', '', '');
+('jefferson nickel', 'a Thomas Jefferson nickel, minted from 1938-2003 with multiple design changes in the following years', 'nickels', 'jefferson', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('beaver tail', 'a Canadian nickel', 'nickels', '', '');
+('war nickel', 'a nickel composed of 35% silver, minted from 1942-1945', 'nickels', 'war', '');
+INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
+('beaver tail', 'a Canadian nickel', 'nickels', 'canadian nickel', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('"nickel" nickel', 'a Canadian nickel composed of 99.9% nickel metal, minted from 1922-1981 with many exceptions (1942-1945, 1951-1954)', 'nickels', '', '');
 
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('merc', 'a mercury dime, minted from 1916-1945', 'dimes', '', '');
+('dime', 'a 10 cent coin in the US and Canada', 'dimes', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('rosie', 'a Franklin Roosevelt dime, specifically one composed of 90% silver (the 90% silver variety was minted from 1946-1964)', 'dimes', '', '');
+('merc dime', 'a mercury dime, minted from 1916-1945', 'dimes', 'mercury dime', '');
+INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
+('rosie', 'a Franklin Roosevelt dime, specifically one composed of 90% silver (the 90% silver variety was minted from 1946-1964)', 'dimes', 'roosevelt dime', '');
 
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('standing', 'a standing liberty quarter, minted from 1916-1930', 'quarters', '', '');
+('quarter', 'a 25 cent coin in the US and Canada', 'quarters', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('washington', 'a George Washington quarter, specifically one composed of 90% silver (the 90% silver variety was minted from 1932-1964)', 'quarters', '', '');
+('standing liberty quarter', 'a standing liberty quarter, minted from 1916-1930', 'quarters', 'standing liberty', 'slq');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('state', 'one of 50 state quarters minted from 1999-2008', 'quarters', '', '');
+('washington quarter', 'a George Washington quarter, specifically one composed of 90% silver (the 90% silver variety was minted from 1932-1964)', 'quarters', 'washington', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('territory', 'one of six territory quarters minted in 2009', 'quarters', '', '');
+('state quarter', 'any one of 50 state quarters minted from 1999-2008', 'quarters', 'state', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('national park', 'term used to refer to any quarter minted after 2009. Though this term accurately categorizes many of these coins, there are examples such as the 2013 Fort McHenry and Mount Rushmore designs that do not follow suit', 'quarters', '', '');
+('territory quarter', 'any one of six territory quarters minted in 2009', 'quarters', 'territory', '');
+INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
+('national park quarter', 'any quarter minted after 2009. Though this term accurately categorizes many of these coins, there are examples such as the 2013 Fort McHenry and Mount Rushmore designs that do not follow suit', 'quarters', 'national park', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('caribou', 'a Canadian quarter', 'quarters', '', '');
-INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('slq', 'acronym for “Standing Liberty Quarter”', 'quarters', '', '');
 
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('benji', 'a Benjamin Franklin half dollar, minted from 1948-1963', 'halves', '', '');
+('half dollar', 'a 50 cent coin in the US and Canada', 'halves', 'half', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('franklin', 'almost always refers to a Benjamin Franklin half dollar, but is sometimes used to describe a silver Franklin Roosevelt dime', 'halves', '', '');
+('benji', 'a Benjamin Franklin half dollar, minted from 1948-1963', 'halves', 'benjamin', '');
+INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
+('franklin', 'almost always refers to a Benjamin Franklin half dollar, but is sometimes used to describe a silver Franklin Roosevelt dime', 'halves', 'franklin half', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('walker', 'a walking liberty half dollar, minted from 1916-1947', 'halves', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('kennedy', 'a Kennedy half dollar', 'halves', '', '');
+('kennedy', 'a Kennedy half dollar', 'halves', 'kennedy half', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('forty percenter', 'a half dollar made out of 40% silver; minted from 1965-1970', 'halves', '', '');
+('forty percenter', 'a half dollar made out of 40% silver; minted from 1965-1970', 'halves', '40%er', '40%');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('ninety percenter', 'a half dollar made out of 90% silver; any half dollar minted before 1965', 'halves', '', '');
+('ninety percenter', 'a half dollar made out of 90% silver; any half dollar minted before 1965', 'halves', '90%er', '90%');
 
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('morgan', 'a morgan silver dollar, minted from 1878-1904, then made again for a single year in 1921', 'dollars', '', '');
+('dollar', 'a one dollar coin in the US and Canada', 'dollars', 'dollar coin', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('ike', 'an Eisenhower dollar coin, minted from 1971-1978', 'dollars', '', '');
+('morgan dollar', 'a morgan silver dollar, minted from 1878-1904, then made again for a single year in 1921', 'dollars', 'morgan', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('susan', 'a Susan B. Anthony dollar coin, minted from 1979-1981, then made again for a single year in 1999. This dollar was the first US coin to resemble an American woman on its obverse', 'dollars', '', '');
+('eisenhower dollar', 'an Eisenhower dollar coin, minted from 1971-1978', 'dollars', 'eisenhower', 'ike');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('sacagawea', 'a Sacagawea dollar coin, minted from 2000 to present day', 'dollars', '', '');
+('susan b. anthony dollar', 'a Susan B. Anthony dollar coin, minted from 1979-1981, then made again for a single year in 1999. This dollar was the first US coin to resemble an American woman on its obverse', 'dollars', 'susan', 'SBA');
+INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
+('sacagawea dollar', 'a Sacagawea dollar coin, minted from 2000 to present day', 'dollars', 'sacagawea', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('president dollar', 'a dollar coin that depicts one of 45 US presidents; minted from 2007 to present day', 'dollars', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('large dollar', 'any US one dollar coin minted before 1979. Typically refers to Eisenhower dollars', 'dollars', '', '');
+('large dollar', 'any US one-dollar coin minted before 1979. Typically refers to Eisenhower dollars', 'dollars', 'big dollar', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('small dollar', 'any US one dollar coin minted after 1978. Includes Susans, Sacagaweas, and presidential dollar coins', 'dollars', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('gold dollar', 'term used to refer to gold-colored one dollar US coins. This can include Sacagawea dollars, but usually refers to presidential dollar coins minted after 2006', 'dollars', '', '');
+('gold dollar', 'term used to refer to gold-colored one-dollar US coins. This can include Sacagawea dollars, but usually refers to presidential dollar coins minted after 2006', 'dollars', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('ase', 'acronym for “American Silver Eagle”, a one ounce fine silver coin that is intended for purchase as bullion', 'dollars', '', '');
+('american silver eagle', 'acronym for “American Silver Eagle”, a one ounce fine silver coin that is intended for purchase as bullion', 'dollars', 'silver eagle', 'ase');
