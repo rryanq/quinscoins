@@ -45,7 +45,7 @@ class Term_search extends React.Component {
       <div className="box">
         <b><p>Search for a Coin Roll Hunting Term!</p></b>
         <form id="search_terms">
-          <input type="text" onChange={this.handleText} />
+          <input type="text" placeholder="ex: CRH, ender" onChange={this.handleText} />
           <input type="submit" onClick={this.handleSubmit} />
         </form>
         <b><p>{this.state.result}</p></b>
