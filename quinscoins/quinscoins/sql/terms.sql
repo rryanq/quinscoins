@@ -108,11 +108,11 @@ INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('shield cent', 'a cent minted after 2009', 'cents', 'shield back', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('copper', 'a copper cent, almost always refers to cents minted from 1959-1982', 'cents', 'cop', '');
+('copper', 'a copper cent, almost always refers to cents minted from 1959-1982', 'cents', 'cop', 'cu');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('steel', 'a 1943 steel cent. Can also used to refer to a steel Canadian cent', 'cents', 'steelie', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('large cent', 'a large cent, minted primarily before 1856 and dating back to 1793 (not commonly found coin roll hunting due to obsolete dimensions)', 'cents', 'largie', 'LC');
+('large cent', 'a large cent, minted primarily before 1856 and dating back to 1793 (not commonly found coin roll hunting due to obsolete dimensions)', 'cents', 'largie', 'lc');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('bird cent', 'a 1967 Centennial Canadian Cent', 'cents', 'birdent', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
@@ -181,7 +181,7 @@ INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('eisenhower dollar', 'an Eisenhower dollar coin, minted from 1971-1978', 'dollars', 'eisenhower', 'ike');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
-('susan b. anthony dollar', 'a Susan B. Anthony dollar coin, minted from 1979-1981, then made again for a single year in 1999. This dollar was the first US coin to resemble an American woman on its obverse', 'dollars', 'susan', 'SBA');
+('susan b. anthony dollar', 'a Susan B. Anthony dollar coin, minted from 1979-1981, then made again for a single year in 1999. This dollar was the first US coin to resemble an American woman on its obverse', 'dollars', 'susan', 'sba');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('sacagawea dollar', 'a Sacagawea dollar coin, minted from 2000 to present day', 'dollars', 'sacagawea', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
