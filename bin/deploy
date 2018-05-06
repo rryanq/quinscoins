@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Run this script to deploy quinscoins app
+
+echo "+ activating virtual environment"
+source env/bin/activate
+echo "+ resetting database"
+./bin/db reset
+echo "+ compiling javascript"
+cd quinscoins
+node_modules/.bin/webpack
+echo "gunicorn processes currently running:"
+pgrep -af gunicorn
+echo "Kill these processes? [Y/n]"
+read temp1
+if [ $temp1 = 'Y' ]; then
+    pkill -f gunicorn
+    echo "+ gunicorn processes terminated"
+    echo "Deploy quinscoins? [Y/n]"
+    read temp2
+    if [ $temp2 = 'Y' ]; then
+        gunicorn -b localhost:8000 -w 2 -D quinscoins:app
+        echo "+ quinscoins app deployed"
+    fi
+fi
