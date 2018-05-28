@@ -20,6 +20,14 @@ def show_gear():
     context = {}
     return flask.render_template("gear.html", **context)
 
+@quinscoins.app.route('/playlists/', methods=['GET'])
+def show_playlists():
+    """Show Playlists."""
+    context = {}
+    data_b = quinscoins.model.get_db()
+    cur = data_b.execute('SELECT * from Playlists')
+    context['playlists'] = cur.fetchall()
+    return flask.render_template("playlists.html", **context)
 
 @quinscoins.app.route('/terms/', methods=['GET'])
 def show_terms():

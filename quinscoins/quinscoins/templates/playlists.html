@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Quin's Coins Playlists</title>
+		<link rel="icon"
+      type="image/png"
+      href="http://www.quinscoins.com/favicon.ico">
+		<link rel="stylesheet" href="/static/css/styles.css">
+    <style type="text/css">a {text-decoration: none}</style>
+	</head>
+  <body>
+    <div class="wrap">
+      <h1>Quin's Coins Video Series'</h1>
+      <div class="boxed">
+        <p><b>
+          Quin's Coins videos are organized into several different series'
+          and some series' even have multiple seasons.
+          With YouTube playlists, you can watch full length
+          Quin's Coins video series' in-order without interruption!
+          Click or tap any of the links below to start watching a
+          Quin's Coins YouTube series right now!
+        </b></p>
+      </div><br>
+			<div class="boxed">
+        {% for playlist in playlists %}
+						<a href="{{playlist['link']}}"><p><b>{{playlist['name']|title}}</b></p></a>
+            <a href="{{playlist['link']}}"><img src="/static/images/{{playlist['image']}}", alt="playlist image", style="text-align:left;width:320px;height:180px;", class="center"></a><br>
+        {% endfor %}
+      <br>
+			</div><br>
+			</div>
+			<p><a href="/", alt="Back to Home" style="text-decoration: underline">Back to Home</a></p>
+      <br><br><p>&copy;2018 Quinlan Productions LLC All Rights Reserved</p>
+    </div>
+  </body>
+</html>

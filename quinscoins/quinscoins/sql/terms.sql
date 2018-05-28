@@ -1,4 +1,5 @@
 CREATE TABLE Terms (term VARCHAR(50), definition VARCHAR(1000), category VARCHAR(50), nickname VARCHAR(50), acronym VARCHAR(10), PRIMARY KEY (term));
+
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('armored car', 'vehicle that delivers coins and other currencies to and from banks. A few popular armored car services are Loomis, Dunbar and Brinks', 'CRH', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
@@ -194,3 +195,27 @@ INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('gold dollar', 'term used to refer to gold-colored one-dollar US coins. This can include Sacagawea dollars, but usually refers to presidential dollar coins minted after 2006', 'dollars', '', '');
 INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 ('american silver eagle', 'acronym for “American Silver Eagle”, a one ounce fine silver coin that is intended for purchase as bullion', 'dollars', 'silver eagle', 'ase');
+
+
+CREATE TABLE Playlists (name VARCHAR(50), link VARCHAR(100), image VARCHAR(100), part INT, PRIMARY KEY (link));
+
+INSERT INTO Playlists (name, link, image, part) VALUES
+('coin quest: pennies', 'http://bit.ly/2nelHiq', 'playlist_cqpennies1.jpg', 1);
+INSERT INTO Playlists (name, link, image, part) VALUES
+('coin roll hunting competitions', 'http://bit.ly/2mwt8Ac', 'playlist_competitions1.jpg', 1);
+INSERT INTO Playlists (name, link, image, part) VALUES
+('search for silver season 1', 'http://bit.ly/2bkcyfH', 'playlist_sfs1.jpg', 1);
+INSERT INTO Playlists (name, link, image, part) VALUES
+('search for silver season 2', 'http://bit.ly/2FFawH8', 'playlist_sfs2.jpg', 2);
+INSERT INTO Playlists (name, link, image, part) VALUES
+('detecting with ryan season 1', 'http://bit.ly/1s0WiZ6', 'playlist_detecting1.jpg', 1);
+INSERT INTO Playlists (name, link, image, part) VALUES
+('detecting with ryan season 2', 'http://bit.ly/2DgQNPz', 'playlist_detecting2.jpg', 2);
+INSERT INTO Playlists (name, link, image, part) VALUES
+('detecting with ryan season 3', 'http://bit.ly/2rbyNBx', 'playlist_detecting3.jpg', 3);
+INSERT INTO Playlists (name, link, image, part) VALUES
+('coin tutorials', 'http://bit.ly/2Dy2vDf', 'playlist_tutorials1.jpg', 1);
+INSERT INTO Playlists (name, link, image, part) VALUES
+('search for copper', 'http://bit.ly/2r6hC4a', 'playlist_sfc1.jpg', 1);
+INSERT INTO Playlists (name, link, image, part) VALUES
+('original coin roll hunting videos', 'http://bit.ly/2EHzvbh', 'playlist_original1.jpg', 1);
