@@ -200,22 +200,22 @@ INSERT INTO Terms (term, definition, category, nickname, acronym) VALUES
 CREATE TABLE Playlists (name VARCHAR(50), link VARCHAR(100), image VARCHAR(100), part INT, PRIMARY KEY (link));
 
 INSERT INTO Playlists (name, link, image, part) VALUES
-('coin quest: pennies', 'http://bit.ly/2nelHiq', 'playlist_cqpennies1.jpg', 1);
+('coin quest: pennies', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTU8tL2FQrbb1jBhFd2FbuR_', 'playlist_cqpennies1.jpg', 1);
 INSERT INTO Playlists (name, link, image, part) VALUES
-('coin roll hunting competitions', 'http://bit.ly/2mwt8Ac', 'playlist_competitions1.jpg', 1);
+('coin roll hunting competitions', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTVVjiUvsHPg5ghu9wxLPDS-', 'playlist_competitions1.jpg', 1);
 INSERT INTO Playlists (name, link, image, part) VALUES
-('search for silver season 1', 'http://bit.ly/2bkcyfH', 'playlist_sfs1.jpg', 1);
+('search for silver season 1', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTUXue7cffZTYcaD9ExYr34N', 'playlist_sfs1.jpg', 1);
 INSERT INTO Playlists (name, link, image, part) VALUES
-('search for silver season 2', 'http://bit.ly/2FFawH8', 'playlist_sfs2.jpg', 2);
+('search for silver season 2', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTUSIcvIUHCbiVBBPPp6h_Rj', 'playlist_sfs2.jpg', 2);
 INSERT INTO Playlists (name, link, image, part) VALUES
-('detecting with ryan season 1', 'http://bit.ly/1s0WiZ6', 'playlist_detecting1.jpg', 1);
+('detecting with ryan season 1', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTU-3qR01r8ehHNu6b3SP6zm', 'playlist_detecting1.jpg', 1);
 INSERT INTO Playlists (name, link, image, part) VALUES
-('detecting with ryan season 2', 'http://bit.ly/2DgQNPz', 'playlist_detecting2.jpg', 2);
+('detecting with ryan season 2', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTUGEnJAfd4slrtJJBttY4kJ', 'playlist_detecting2.jpg', 2);
 INSERT INTO Playlists (name, link, image, part) VALUES
-('detecting with ryan season 3', 'http://bit.ly/2rbyNBx', 'playlist_detecting3.jpg', 3);
+('detecting with ryan season 3', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTVTSLpV-abmYHSx5-SpPCyF', 'playlist_detecting3.jpg', 3);
 INSERT INTO Playlists (name, link, image, part) VALUES
-('coin tutorials', 'http://bit.ly/2Dy2vDf', 'playlist_tutorials1.jpg', 1);
+('coin tutorials', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTX1FFKkQg7e0aj8yGzEbrhd', 'playlist_tutorials1.jpg', 1);
 INSERT INTO Playlists (name, link, image, part) VALUES
-('search for copper', 'http://bit.ly/2r6hC4a', 'playlist_sfc1.jpg', 1);
+('search for copper', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTVg0z7orfEwQvPGClccv_iT', 'playlist_sfc1.jpg', 1);
 INSERT INTO Playlists (name, link, image, part) VALUES
-('original coin roll hunting videos', 'http://bit.ly/2EHzvbh', 'playlist_original1.jpg', 1);
+('original coin roll hunting videos', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTV3CmXvGFkN350b0EiE2Kht', 'playlist_original1.jpg', 1);
