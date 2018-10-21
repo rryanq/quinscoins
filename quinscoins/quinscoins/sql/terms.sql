@@ -219,3 +219,6 @@ INSERT INTO Playlists (name, link, image, part) VALUES
 ('search for copper', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTVg0z7orfEwQvPGClccv_iT', 'playlist_sfc1.jpg', 1);
 INSERT INTO Playlists (name, link, image, part) VALUES
 ('original coin roll hunting videos', 'https://www.youtube.com/embed/videoseries?list=PLYnOB-xWrjTV3CmXvGFkN350b0EiE2Kht', 'playlist_original1.jpg', 1);
+
+
+CREATE TABLE Suggestions (term VARCHAR(50), datetime VARCHAR(50))

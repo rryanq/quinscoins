@@ -14,3 +14,4 @@ app.config.from_envvar('BRUH', silent=True)
 import quinscoins.model # noqa: E402  pylint: disable=wrong-import-position
 import quinscoins.views.views # noqa: E402  pylint: disable=wrong-import-position
 import quinscoins.api.term_result  # noqa: E402  pylint: disable=wrong-import-position
+import quinscoins.api.new_suggestions # noqa: E402  pylint: disable=wrong-import-position
