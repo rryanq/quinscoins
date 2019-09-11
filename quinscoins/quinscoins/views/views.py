@@ -20,6 +20,12 @@ def show_gear():
     context = {}
     return flask.render_template("gear.html", **context)
 
+@quinscoins.app.route('/coinquest/', methods=['GET'])
+def show_coinquest():
+    """Show Coin Quest."""
+    context = {}
+    return flask.render_template("coinquest.html", **context)
+
 @quinscoins.app.route('/playlists/', methods=['GET'])
 def show_playlists():
     """Show Playlists."""

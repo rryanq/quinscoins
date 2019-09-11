@@ -30,3 +30,73 @@
     transform: rotate(360deg);
   }
 }
+
+/*
+.wrap {
+	max-width: 500px;
+	margin: auto;
+}
+.box {
+	max-width: 450px;
+	margin: auto;
+  border: 5px solid grey ;
+}
+.boxed {
+  border: 5px solid green ;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.menu-items {
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		max-width: 450px;
+		margin: auto;
+}
+.menu-item {
+	display: inline-block;
+	border: 3px solid green;
+	font-size: 16pt;
+	padding: 2px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+	  text-align: center;
+}
+p {
+  text-align: center;
+}
+table {
+  text-align: center;
+}
+tr {
+  text-align: center;
+}
+td {
+  text-align: center;
+}
+input {
+  text-align: center;
+}
+span {
+  text-align: center;
+}
+img {
+  text-align: center;
+}
+form {
+	text-align: center;
+}
+a {
+	text-align: center;
+}
+li a {
+    text-align: center;
+}
+*/

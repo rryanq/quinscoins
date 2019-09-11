@@ -104,3 +104,9 @@ ENV/
 quinscoins_key.pem
 quinscoins/node_modules
 quinscoins/quinscoins/static/js/bundle.js
+
+# Config
+my-app/src/config.json
+
+# Node modules
+node_modules/*
