@@ -1,11 +1,12 @@
 #!/bin/bash
 
-cd quinscoins/quinscoins
+cd quinscoins
 echo "starting quinscoins server ..."
 echo "+ export FLASK_APP=quinscoins"
-echo "+ export SEARCH_SETTINGS=config.py"
-echo "+ flask run --host 0.0.0.0 --port 8000" # &> /dev/null &"
-export FLASK_DEBUG=True
 export FLASK_APP=quinscoins
+echo "+ export QUINSCOINS_SETTINGS=config.py"
 export QUINSCOINS_SETTINGS=config.py
+echo "+ export FLASK_ENV=development"
+export FLASK_ENV=development
+echo "+ flask run --host 0.0.0.0 --port 8000"
 flask run --host 0.0.0.0 --port 8000
