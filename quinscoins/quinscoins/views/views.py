@@ -26,6 +26,12 @@ def show_coinquest():
     context = {}
     return flask.render_template("coinquest.html", **context)
 
+@quinscoins.app.route('/coinquestnickels/', methods=['GET'])
+def show_coinquest_nickels():
+    """Show Coin Quest Nickels."""
+    context = {}
+    return flask.render_template("coinquestnickels.html", **context)
+
 @quinscoins.app.route('/playlists/', methods=['GET'])
 def show_playlists():
     """Show Playlists."""
