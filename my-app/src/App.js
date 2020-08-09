@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ProductPage from './ProductPage.js'
+import HomePage from './HomePage.js'
+import MyGearPage from './MyGearPage.js'
+import AboutPage from './AboutPage.js'
 // import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 // import './App.css';
 // import theme from './theme';
@@ -61,13 +64,13 @@ class App extends Component {
   render() {
     let content = <div>Nothing here!</div>
     if (this.state.openPage === 'home') {
-      content = <div>Home Page</div>
+      content = <HomePage/>
     } else if (this.state.openPage === 'shop') {
       content = <ProductPage/>
     } else if (this.state.openPage === 'gear') {
-      content = <div>My Gear Page</div>
+      content = <MyGearPage/>
     } else if (this.state.openPage === 'about') {
-      content = <div>About Page</div>
+      content = <AboutPage/>
     } else {
       content = <div>Nothing here!</div>
     }

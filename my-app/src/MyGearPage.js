@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 const config = require('./config.json');
 
-class HomePage extends Component {
+class MyGearPage extends Component {
 
   render() {
     return(
-      <div>Home Page</div>
+      <div>My Gear Page</div>
     );
   }
 }
 
-export default HomePage;
+export default MyGearPage;
