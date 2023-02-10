@@ -4,18 +4,27 @@ import ProductPage from './ProductPage.js'
 import HomePage from './HomePage.js'
 import MyGearPage from './MyGearPage.js'
 import AboutPage from './AboutPage.js'
+import logo from './images/logo.png'
 // import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 // import './App.css';
 // import theme from './theme';
 //import { Image } from 'react-native'
 
 const Wrapper = styled.section`
-  text-align: center;
   margin: auto;
 `;
 
 const PageWrapper = styled.section`
   margin: 50px auto;
+  text-align: center;
+`;
+
+// FIXME: dimensions
+const LogoImage = styled.img`
+  height: 38px;
+  width: 225px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 `;
 
 const TopBar = styled.section`
@@ -27,20 +36,23 @@ const TopBar = styled.section`
   background-color: green;
   overflow: hidden;
   z-index: 10
+  display: flex;
+  align-items: center;
 `;
 
-const HeaderButton =styled.button`
-  position: relative;
+const HeaderButton = styled.button`
   top: 5px;
   color: white;
   text-decoration: none;
-  float: left;
-  display: block;
-  padding: 5px;
+  padding: 10px;
   font-size: 25px;
   background-color: transparent;
   border: none;
   font-weight: bold;
+  cursor: pointer;
+  :hover {
+    background-color: darkgreen;
+  }
 `;
 
 class App extends Component {
@@ -52,7 +64,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      openPage: 'home'
+      openPage: 'shop'
     };
     this.handleHeaderButtonClick = this.handleHeaderButtonClick.bind(this);
   }
@@ -78,6 +90,9 @@ class App extends Component {
     return (
       <Wrapper>
         <TopBar>
+          <LogoImage
+            src={logo}
+          />
           <HeaderButton
             onClick={() => this.handleHeaderButtonClick('home')}
           >
@@ -101,8 +116,8 @@ class App extends Component {
         </TopBar>
         <PageWrapper>
           {content}
+          <p>&copy;{new Date().getFullYear()} Quinlan Productions LLC All Rights Reserved</p>
         </PageWrapper>
-        <p>&copy;{new Date().getFullYear()} Quinlan Productions LLC All Rights Reserved</p>
       </Wrapper>
     );
   }

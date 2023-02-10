@@ -110,3 +110,8 @@ my-app/src/config.json
 
 # Node modules
 node_modules/*
+
+# keys
+*.pem
+
+scratch.txt

@@ -15,3 +15,13 @@ mv quinscoins/static/js/bundle-obfuscated.js quinscoins/static/js/bundle.js # re
 pgrep -af gunicorn # checks if there are any gunicorn processes running
 pkill -f gunicorn # kills any gunicorn processes
 gunicorn -b localhost:8000 -w 2 -D quinscoins:app # deploys app
+
+
+# Elastic Beanstalk Solution Commands
+
+# SSH into EC2 instance
+ssh -i quinscoins-key.pem ubuntu@ec2-100-25-158-76.compute-1.amazonaws.com
+
+# Create a production build of the react app:
+npm run build
+# then, copy the files from the build directory into an amazon s3 bucket
